@@ -14,7 +14,7 @@ function MyComplaints() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:8080/complaints/my",
+          "https://complaint-backend-oc9n.onrender.com/complaints/my",
           {
             headers: {
               Authorization: `Bearer ${token}`

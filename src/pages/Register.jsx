@@ -23,7 +23,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8080/users/register", user);
+      await axios.post("https://complaint-backend-oc9n.onrender.com/users/register", user);
 
       alert("Registration successful!");
 

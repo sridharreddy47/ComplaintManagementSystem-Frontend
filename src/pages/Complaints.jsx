@@ -25,7 +25,7 @@ function Complaints() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:8080/complaints",
+        "https://complaint-backend-oc9n.onrender.com/complaints",
         complaint,
         {
           headers: {

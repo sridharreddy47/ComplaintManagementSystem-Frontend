@@ -14,7 +14,7 @@ function Admin() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:8080/complaints",
+        "https://complaint-backend-oc9n.onrender.com/complaints",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -47,7 +47,7 @@ function Admin() {
       );
 
       await axios.put(
-        `http://localhost:8080/complaints/${id}`,
+        `https://complaint-backend-oc9n.onrender.com/complaints/${id}`,
         {
           ...complaint,
           status: status
@@ -76,7 +76,7 @@ function Admin() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:8080/complaints/${id}`,
+        `https://complaint-backend-oc9n.onrender.com/complaints/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
